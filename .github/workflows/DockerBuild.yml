@@ -11,12 +11,12 @@ jobs:
 
       - name: Login to DockerHub
         run: |
-          echo ${{ secrets.DOCKERTOKEN }} | docker login -u "your_docker_username" --password-stdin
+          echo ${{ secrets.DOCKERTOKEN }} | docker login -u "mayankthakur500123412" --password-stdin
 
       - name: Build Docker Image
         run: |
-          docker build -t your_docker_username/fastapi-app:v0.1 .
+          docker build -t mayankthakur500123412/fastapi-app:v0.1 .
 
       - name: Push Docker Image
         run: |
-          docker push your_docker_username/fastapi-app:v0.1
+          docker push mayankthakur500123412/fastapi-app:v0.1

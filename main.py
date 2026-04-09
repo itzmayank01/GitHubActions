@@ -5,8 +5,8 @@ import uvicorn
 @app.get("/")
 def read_root():
     return dict(
-        name="Your Name",
-        sapid="YOUR_SAP_ID",
+        name="Mayank Thakur",
+        sapid="500123412",
         Location="Dehradun"
     )
 
